@@ -27,13 +27,13 @@ direcoes_girar = {
 @app.route('/andar/<direcao>')
 def andar(direcao):
     com.write(str(direcoes_andar[direcao]))
-    return 'andou para %s' % direcao
+    return 'PatoBot andou para %s' % direcao
 
 
 @app.route('/girar/<direcao>')
 def girar(direcao):
     com.write(str(direcoes_girar[direcao]))
-    return 'girou para a %s' % direcao
+    return 'PatoBot girou para a %s' % direcao
 
 
 @app.route('/')

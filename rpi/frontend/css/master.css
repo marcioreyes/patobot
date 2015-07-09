@@ -1,0 +1,59 @@
+.control {
+  position: absolute;
+  left: 10px;
+  top: 40px;
+  width: 220px;
+  height: 90px;
+}
+.bt_right, .bt_left, .bt_top, .bt_bottom {
+  box-shadow: 0 4px 0 0 #6b2824;
+  background: #c14b45;
+  border-color: #c14b45;
+  display: inline-block;
+  color: #fff;
+  padding: 25px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 34px;
+  width: 35px;
+  height: 35px;
+  z-index: 999999;
+  border-radius: 6px;
+  transition: background .4s;
+}
+.bt_right:hover, .bt_left:hover, .bt_top:hover, .bt_bottom:hover {
+  background: #d45548;
+}
+.bt_right:active, .bt_left:active {
+  top: 4px;
+  box-shadow: none;
+}
+.bt_top:active, .bt_bottom:active {
+  box-shadow: none!important;
+}
+.bt_top:active {
+  bottom: 46px;
+}
+.bt_bottom:active {
+  bottom: -17px;
+}
+.bt_right {
+  float: right;
+}
+.bt_left {
+  float: left;
+}
+.bt_top, .bt_bottom {
+  position: absolute;
+  box-shadow: 4px 0px 0px 0px#6b2824!important;
+  transform: rotate(90deg);
+}
+.bt_bottom {
+  bottom: -13px;
+  right: 80px;
+}
+.bt_top {
+  bottom: 50px;
+  right: 80px;
+}

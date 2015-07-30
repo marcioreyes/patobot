@@ -2,7 +2,7 @@ int LED = 13;
 int inByte = 0;
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   pinMode(LED, OUTPUT);
 }
 

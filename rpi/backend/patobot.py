@@ -3,13 +3,15 @@
 import serial
 from flask import Flask
 
-device = '/dev/ttyACM0'
-baud_rate = 115200
+devices = ('/dev/ttyUSB0', '/dev/ttyACM0')
 
-try:
-    com = serial.Serial(device, baud_rate)
-except:
-    exit()
+for device in devices:
+    try:
+        com = serial.Serial(device)
+        break
+    except:
+        com = False
+        continue
 
 app = Flask(__name__)
 
@@ -38,7 +40,8 @@ def girar(direcao):
 
 @app.route('/')
 def main():
-    return 'PatoBot :-)'
+    status = 'on' if com else 'off'
+    return 'PatoBot: %s' % status
 
 
 if __name__ == '__main__':

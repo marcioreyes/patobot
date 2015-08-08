@@ -2,6 +2,7 @@
 
 import serial
 from flask import Flask
+from flask.ext.cors import CORS
 
 devices = ('/dev/ttyUSB0', '/dev/ttyACM0')
 
@@ -14,6 +15,7 @@ for device in devices:
         continue
 
 app = Flask(__name__)
+CORS(app)
 
 direcoes_andar = {
     'frente': '1',

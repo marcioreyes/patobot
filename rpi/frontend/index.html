@@ -1,17 +1,111 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>PatoLivre - PatoBot</title>
-  <link rel="stylesheet" href="css/master.css">
-</head>
-<body>
-  <div class="control">
-    <a class="bt bt_top" href="#" onclick="javascript:frente()"><</a>
-    <a class="bt bt_right" href="#" onclick="javascript:direita()">></a>
-    <a class="bt bt_bottom" href="#" onclick="javascript:tras()">></a>
-    <a class="bt bt_left" href="#" onclick="javascript:esquerda()"><</a>
-  </div>
-  <script src="js/app.js" charset="utf-8"></script>
-</body>
-</html>
+<html ng-app="jogo">
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta charset="UTF-8">
+		<script src="//localhost:35729/livereload.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<title>Pato Robo</title>
+
+		<body>
+			<div class="row">
+      <div class="col-xs-12 principal cor-fundo-principal">
+				<div class="row secundario">
+					<div class="col-xs-10 col-xs-offset-1 secundario-interno cor-fundo-secundario">
+
+						<div class="row">
+							<div class="col-xs-4 setas text-center">
+
+								 <div class="row">
+										<div class="col-xs-10 col-xs-offset-2 ">
+										 <span class="glyphicon glyphicon-arrow-up seta borda borda-top" onclick="frente();"></span>
+								 		</div>
+								 </div>
+
+								 <div class="row">
+									 <div class="col-xs-5 col-xs-offset-2 ">
+										<span class="glyphicon glyphicon-arrow-left seta borda borda-esquerda" onclick="esquerda();"></span>
+									 </div>
+
+									 <div class="col-xs-5 ">
+										<span class="glyphicon glyphicon-arrow-right seta borda borda-direita" onclick="direita();"></span>
+									 </div>
+								</div>
+
+								<div class="row">
+									 <div class="col-xs-10 col-xs-offset-2 ">
+										<span class="glyphicon glyphicon-arrow-down seta borda borda-bottom" onclick="tras();"></span>
+									 </div>
+								</div>
+
+							</div>
+							<div class="col-xs-4 central">
+								<div class="row item">
+									<div class="col-xs-12 linha linha-top" ></div>
+								</div>
+								<div class="row item">
+									<div class="col-xs-12 linha linha-normal" ></div>
+								</div>
+								<div class="row item">
+									<div class="col-xs-12 linha linha-normal" >
+									<div class="row text-uppercase texto-menu">
+										<div class="col-xs-6 text-left">select</div>
+											<div class="col-xs-6 text-right">start</div>
+									</div>
+									</div>
+								</div>
+								<div class="row quadro item">
+								<div class="col-xs-12 quadro-interno-fora">
+									<div class="row">
+										<div class="col-xs-6 sem-margin">
+											<button type="button" class="button-menu" name="button" onclick="mudarIp();"></button>
+										</div>
+										<div class="col-xs-6 sem-margin">
+											<button type="button" class="button-menu" name="button"></button>
+										</div>
+									</div>
+								</div>
+
+								</div>
+								<div class="row item">
+									<div class="col-xs-12 linha final" ></div>
+								</div>
+
+							</div>
+							<div class="col-xs-4 botoes">
+
+							<div class="row logo">
+								<div class="col-xs-12 text-center escrita">
+									PatoLivre
+								</div>
+							</div>
+
+							<div class="row selecao">
+								<div class="col-xs-5 fundo-botao sem-margin">
+									<button type="button" class="redondo-red" name="button"></button>
+								</div>
+								<div class="col-xs-5 col-xs-offset-1 fundo-botao sem-margin">
+									<button type="button" class="redondo-red" name="button" onclick="limparDados();"></button>
+								</div>
+							</div>
+							<div class="row escrita-botao sem-margin">
+								<div class="col-xs-5 fundo-botao text-right sem-margin">
+								A
+								</div>
+								<div class="col-xs-6 col-xs-offset-1 fundo-botao sem-margin text-right">
+								B
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+      </div>
+		</div>
+
+			<script type="text/javascript" src="js/app.js"></script>
+
+		</body>
+	</html>

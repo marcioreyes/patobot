@@ -1,0 +1,234 @@
+html{
+  margin: 0px;
+  padding: 0px;
+  width: 480px;
+  height: 320px;
+}
+
+.clear{
+  clear: both;
+}
+.sem-margin{
+  margin: 0px;
+  padding: 0px;
+}
+/*--------------------
+// PRINCIPAL
+//-------------------- */
+
+.principal{
+  height: 320px;
+}
+
+.cor-fundo-principal{
+  background: #D1CDCA;
+  border: 2px groove #D1CDCA;
+}
+
+/*--------------------
+// SECUNDARIO
+//--------------------*/
+.secundario{
+  margin-top: 25px;
+}
+
+.secundario .secundario-interno{
+   height: 280px;
+}
+.cor-fundo-secundario{
+  background: #302C30;
+  border: 2px inset #D1CDCA;
+}
+.setas{
+  margin-top: 100px;
+}
+.setas .seta{
+  color: #D1CDCA;
+  font-size: 26px;
+}
+
+.setas .borda{
+  border: 2px #D1CDCA outset;
+}
+
+.setas .borda-top{
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: none;
+
+  -webkit-box-shadow: -29px -27px 37px -13px rgba(212,212,212,0.56);
+  -moz-box-shadow: -29px -27px 37px -13px rgba(212,212,212,0.56);
+  box-shadow: -29px -27px 37px -13px rgba(212,212,212,0.56);
+}
+
+.setas .borda:active{
+  border: 2px #D1CDCA inset;
+}
+
+.setas .borda-esquerda{
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+}
+
+.setas .borda-direita{
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: none;
+}
+
+.setas .borda-bottom{
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: none;
+}
+
+/*--------------------
+// CENTRAL
+//--------------------*/
+
+.central .linha {
+  background: #A5A4A4;
+  height: 37px;
+}
+
+.central .item{
+  margin-bottom: 10px;
+}
+
+.central .linha-top{
+  height: 60px !important;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.central .linha-normal{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.final {
+  -webkit-border-top-left-radius: 5px !important;
+  -webkit-border-top-right-radius: 5px !important;
+  -moz-border-radius-topleft: 5px !important;
+  -moz-border-radius-topright: 5px !important;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  height: 32px !important;
+}
+.central .linha-bottom{
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.texto-menu{
+  color: #CB4427;
+  font-family: "nes_controller_cadregular";
+  font-size: 15pt;
+  padding: 3px 2px;
+  letter-spacing: 1px;
+}
+.texto-menu div {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0px;
+  padding: 0px;
+}
+
+.central .quadro{
+  height: 70px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.central .quadro-interno-fora{
+  border: 2px #A7A6A4 inset ;
+  height: 66px;
+  background: #D1CDCA;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.button-menu{
+  height: 20px;
+  background: black;
+  width: 80%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 23px;
+  margin-left: 10%;
+}
+
+/*--------------------
+// BOTOES
+//--------------------*/
+.logo{
+  height: 165px;
+  font-family: "nes_controller_cadregular";
+  font-size: 16pt;
+  color: #CB4427;
+  letter-spacing: 3px;
+}
+
+.logo .escrita{
+  margin-top: 71px;
+}
+.selecao{
+  margin-left: -5px;
+}
+.selecao .fundo-botao{
+  border: 2px #A7A6A4 inset;
+  height: 55px;
+  background: #D1CDCA;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.redondo-red{
+  -webkit-border-radius: 150px;
+-moz-border-radius: 150px;
+border-radius: 150px;
+border-radius: 150px;
+height: 45px;
+background: #CB4427;
+width: 90%;
+margin-top: 2px;
+margin-left: 2px;
+}
+
+.escrita-botao{
+  color: #CB4427;
+  font-family: "nes_controller_cadregular";
+  font-size: 18pt;
+}
+.escrita-botao div{
+  margin-top: -13px;
+}

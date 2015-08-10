@@ -12,10 +12,17 @@ function verificaStorage() {
   }
 }
 
+function verificaArduinoConectado(){
+  values.url = ip + '/';
+  ajax(values, function(resp) {
+    alert(resp.response);
+  });
+}
+
 function mudarIp(){
   var ipMudanca = prompt("Insira um ip com a porta. Ex: 192.168.1.2:5000", ip);
 
-  if (ipMudanca != null) {
+  if (ipMudanca !== null) {
     ip = ipMudanca;
     localStorage['ip'] = ip;
   }

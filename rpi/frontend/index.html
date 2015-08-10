@@ -1,14 +1,15 @@
-<html ng-app="jogo">
+<!DOCTYPE HTML>
+<html>
 	<head>
 		<meta name="viewport" content="width=device-width">
 		<meta charset="UTF-8">
-		<script src="//localhost:35729/livereload.js"></script>
+		<!--<script src="//localhost:35729/livereload.js"></script>-->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/fonts.css">
 		<title>Pato Robo</title>
-
+	</head>
 		<body>
 			<div class="row">
       <div class="col-xs-12 principal cor-fundo-principal">
@@ -63,7 +64,7 @@
 											<button type="button" class="button-menu" name="button" onclick="mudarIp();"></button>
 										</div>
 										<div class="col-xs-6 sem-margin">
-											<button type="button" class="button-menu" name="button"></button>
+											<button type="button" class="button-menu" name="button" onclick="verificaArduinoConectado();"></button>
 										</div>
 									</div>
 								</div>

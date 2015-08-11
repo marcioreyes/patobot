@@ -29,10 +29,11 @@ function mudarIp(){
 }
 
 function ajax(values, callback) {
-  var oReq = new XMLHttpRequest();
+  var oReq = new XMLHttpRequest({mozSystem:true});
   oReq.addEventListener('load', callback(oReq));
-  oReq.open(values.rest, values.url, values.async);
-  oReq.send();
+  oReq.open(values.rest, 'http://'+values.url, values.async);
+  oReq.send(null);
+
 }
 
 /*-----------------------
@@ -86,7 +87,7 @@ var tras = function() {
 };
 
 var direita = function() {
-  values.url = "http://"+ip + '/girar/direita';
+  values.url = ip + '/girar/direita';
   ajax(values, function(resp) {
     console.log(resp.response);
   });

@@ -15,7 +15,7 @@ function verificaStorage() {
 function verificaArduinoConectado(){
   values.url = ip + '/';
   ajax(values, function(resp) {
-    alert(resp.response);
+    alert(resp);
   });
 }
 
@@ -30,7 +30,12 @@ function mudarIp(){
 
 function ajax(values, callback) {
   var oReq = new XMLHttpRequest({mozSystem:true});
-  oReq.addEventListener('load', callback(oReq));
+  oReq.onreadystatechange=function()
+  {
+    if (oReq.readyState==4 && oReq.status==200){
+        callback(oReq.responseText);
+    }
+  }
   oReq.open(values.rest, 'http://'+values.url, values.async);
   oReq.send(null);
 
@@ -61,7 +66,7 @@ if(localStorage){
 var values = {
   url: '',
   rest: 'GET',
-  async: false
+  async: true
 };
 
 /*-----------------------
@@ -75,28 +80,28 @@ var values = {
 var frente = function() {
   values.url = ip + '/andar/frente';
   ajax(values, function(resp) {
-    console.log(resp.response);
+    console.log(resp);
   });
 };
 
 var tras = function() {
   values.url = ip + '/andar/tras';
   ajax(values, function(resp) {
-    console.log(resp.response);
+    console.log(resp);
   });
 };
 
 var direita = function() {
   values.url = ip + '/girar/direita';
   ajax(values, function(resp) {
-    console.log(resp.response);
+    console.log(resp);
   });
 };
 
 var esquerda = function() {
   values.url = ip + '/girar/esquerda';
   ajax(values, function(resp) {
-    console.log(resp.response);
+    console.log(resp);
   });
 };
 
